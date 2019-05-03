@@ -1,0 +1,25 @@
+.summary{
+  max-height: 105px;
+  overflow-y: hidden;
+  transition: 0.3s;
+  span {
+    text-align: center;
+  }
+  &.expand{
+    max-height: 100%;
+  }
+}
+    
+.less-more{
+  &.less{
+    display: none;
+    &.active{
+    display: block;
+    }
+  }
+  &.more{
+    &.hide{
+      display: none;
+    }
+  }
+}
